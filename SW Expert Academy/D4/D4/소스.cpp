@@ -4,10 +4,8 @@ using namespace std;
 
 int main()
 {
-	char temp[200];
-	while (1)
-	{
-		scanf("%s", temp);
-		
-	}
+	char c='1';
+
+	int d = c;
+	getchar();
 }
