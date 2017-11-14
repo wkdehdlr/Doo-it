@@ -21,6 +21,15 @@
     <ClCompile Include="1233 사칙연산 유효성 검사.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1232 사칙연산.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1232 사칙연산2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
