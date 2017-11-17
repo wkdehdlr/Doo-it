@@ -1,34 +1,26 @@
-#pragma warning(disable:4996)
+#pragma warning(disable : 4996)
 #include<cstdio>
+#include<cstring>
+#include<queue>
+#include<functional>
 using namespace std;
 
-int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
-int new_arr[5];
+struct now {
+	int x;
+	int y;
+	int total;
+};
+
+bool operator<(now t, now u) {
+	return t.total > u.total;
+}
 
 int main()
 {
-	int num = 1 << 10;
-	int cnt = 0;
-
-	for (int i = 0; i < num; ++i)
-	{
-		cnt = 0;
-		for (int j = 0; j < 10; ++j)
-		{
-			if (i & (1 << j))
-			{
-				new_arr[cnt] = arr[j];
-				cnt++;
-			}
-		}
-		if (cnt == 5)
-		{
-			for (int k = 0; k < 5; ++k)
-			{
-				printf("%d", new_arr[k]);
-			}
-			printf("\n");
-		}
-	}
-
+	priority_queue<now > pq;
+	pq.push({ 1,1,5 });
+	pq.push({ 1,1,4 });
+	pq.push({ 1,1,3 });
+	pq.push({ 1,1,2 });
+	pq.push({ 1,1,1 });
 }
