@@ -3,24 +3,29 @@
 #include<cstring>
 #include<queue>
 #include<functional>
+#include<cmath>
 using namespace std;
 
-struct now {
-	int x;
-	int y;
-	int total;
-};
-
-bool operator<(now t, now u) {
-	return t.total > u.total;
-}
 
 int main()
 {
-	priority_queue<now > pq;
-	pq.push({ 1,1,5 });
-	pq.push({ 1,1,4 });
-	pq.push({ 1,1,3 });
-	pq.push({ 1,1,2 });
-	pq.push({ 1,1,1 });
+	char tmp[20];
+	scanf("%s", tmp);
+
+	double mul = 0;
+
+	for (int i = 0; tmp[i] != '\0'; ++i)
+	{
+		if (tmp[i] != '.')
+		{
+			mul *= 10;
+			mul += tmp[i] - '0';
+		}
+	}
+	for (int i = 0; i < strlen(tmp) - 2; ++i)
+	{
+		mul *= 0.1;
+	}
+
+	printf("%d", mul);
 }
