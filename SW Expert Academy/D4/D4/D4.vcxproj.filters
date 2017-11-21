@@ -27,9 +27,6 @@
     <ClCompile Include="1232 사칙연산2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="1767 프로세서 연결하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -69,10 +66,31 @@
     <ClCompile Include="1251 하나로2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1494 사랑의 카운슬러.cpp">
+    <ClCompile Include="1258 행렬찾기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1258 행렬찾기.cpp">
+    <ClCompile Include="1486 장훈이의 높은 선반.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1803 Shortest Path Faster.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1803 Shortest Path Faster2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1861 정사각형 방.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1861 정사각형 방2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1244 최대 상금.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="비트마스크 조합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1244 최대 상금2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
