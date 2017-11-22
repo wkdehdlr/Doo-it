@@ -117,8 +117,16 @@
     <ClCompile Include="1213 String.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="1244 최대 상금.cpp" />
-    <ClCompile Include="1244 최대 상금2.cpp" />
+    <ClCompile Include="1244 최대 상금.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1244 최대 상금2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1244 최대 상금3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1244 최대 상금4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
