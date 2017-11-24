@@ -87,6 +87,12 @@
     <ClCompile Include="비트마스크 조합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1808 지희의 고장난 계산기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1808 지희의 고장난 계산기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
