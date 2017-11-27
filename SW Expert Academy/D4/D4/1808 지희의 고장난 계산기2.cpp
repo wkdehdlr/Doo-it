@@ -105,26 +105,6 @@ void BFS()
 					}
 				}
 			}
-			/*
-			for (int i = 9; i >= 1; --i)
-			{
-				if (usable[i])
-				{
-					int mul = 0;
-					for (int k = 0; k < 8; ++k)
-					{
-						mul *= 10;
-						mul += i;
-						if (mul == 1)
-							continue;
-						if (!(data1 % mul))//나누어 떨어지면
-						{
-							q.push({ data1 / mul,cnt + 2 + k });
-						}
-					}
-				}
-			}
-			*/
 		}
 	}
 }
