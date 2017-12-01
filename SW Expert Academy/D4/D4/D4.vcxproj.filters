@@ -96,6 +96,15 @@
     <ClCompile Include="1824 혁진이의 프로그램 검증.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1865 동철이의 일 분배.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1865 동철이의 일 분배2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1865 동철이의 일 분배3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
