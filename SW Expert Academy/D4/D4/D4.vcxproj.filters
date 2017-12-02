@@ -105,6 +105,9 @@
     <ClCompile Include="1865 동철이의 일 분배3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1868 파핑파핑 지뢰찾기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

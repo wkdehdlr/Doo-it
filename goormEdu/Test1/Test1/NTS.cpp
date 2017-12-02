@@ -5,12 +5,12 @@
 int main()
 {
 	char num[6];//최대 99999 5자리까지 입력가능하고 뒤에 널문자
-	char length;//입력받은숫자의 자릿수 저장 5자리가 최대이므로 굳이 int로 선언할 필요가 없다.
+	int length;
 				
 	scanf("%s", num);
 	length = strlen(num);
 
-	for (char i = 0; i < length; ++i)
+	for (int i = 0; i < length; ++i)
 	{
 		switch (num[i])//if else를 안쓰고 switch를 쓴 이유는 
 					   //if else는 계속 비교해야하는데 
@@ -29,12 +29,12 @@ int main()
 		case '9':printf("구"); break;
 		}
 
-		switch (length - 2 - i)
+		switch (length - i)
 		{
-		case 0:printf("십"); break;
-		case 1:printf("백"); break;
-		case 2:printf("천"); break;
-		case 3:printf("만"); break;
+		case 2:printf("십"); break;
+		case 3:printf("백"); break;
+		case 4:printf("천"); break;
+		case 5:printf("만"); break;
 		}
 	}
 

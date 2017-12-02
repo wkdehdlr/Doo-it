@@ -1,86 +1,46 @@
 #pragma warning(disable : 4996)
-#include <iostream>
-#include <vector>
-
+#include<cstdio>
+#include<cstring>
 using namespace std;
+int mat[3][3];
+int dp[3][2][2][2];
 
-#define MAX_N 201
-#define MAX_M 201
-
-// A와 B의 정점의 개수
-int n, m;
-
-// adj[i][j] = Ai와 Bj가 연결되어 있는가?
-bool adj[MAX_N][MAX_M];
-
-// 각 정점에 매칭된 상대 정점의 번호를 지정한다.
-vector<int> aMatch, bMatch;
-
-// dfs()의 방문 여부
-vector<bool> visited;
-
-// A의 정점인 a에서 B의 매칭되지 않은 정점으로 가는 경로를 찾는다.
-bool dfs(int a)
-{
-	if (visited[a])
-		return false;
-
-	visited[a] = true;
-
-	for (int b = 0; b < m; b++)
-	{
-		if (adj[a][b])
-		{
-			// b가 매칭되어 있지 않다면 bMatch[b]에서부터 시작해 증가 경로를 찾는다.
-			// 매칭되어 있다면 dfs에서 매칭되어있는 A정점이 다른 곳을 매칭 할 수 있는지 본다.
-			if (bMatch[b] == -1 || dfs(bMatch[b]))
-			{
-				// 증가 경로를 발견하였을 때, a와 b를 매치시킨다.(이어준다.)
-				aMatch[a] = b;
-				bMatch[b] = a;
-
-				return true;
-			}
-		}
-	}
-
-	return false;
-}
-
-// aMatch, bMatch 배열을 계산하고 최대 매칭 크기를 반환한다.
-int bipartiteMatch()
-{
-	// -1로 초기화 (어떤 정점과도 연결되어 있지 않다는 의미)
-	aMatch = vector<int>(n, -1);
-	bMatch = vector<int>(m, -1);
-
-	int size = 0;
-
-	for (int start = 0; start < n; start++)
-	{
-		visited = vector<bool>(n, false);
-
-		// 깊이 우선 탐색을 이용해 start에서 시작하는 증가 경로를 찾는다.
-		if (dfs(start))
-			size++;
-	}
-
-	return size;
-}
-
+double go(int, int, int, int);
 int main()
 {
-
-	scanf("%d", &n);
-	m = n;
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < 3; ++i)
 	{
-		for (int j = 0; j < n; ++j)
+		for (int j = 0; j < 3; ++j)
 		{
-			adj[i][j] = true;
+			scanf("%d", &mat[i][j]);
 		}
 	}
-	cout << bipartiteMatch() << endl;
+	memset(dp, -1, sizeof(dp));
+	printf("%lf\n", go(0, 0, 0, 0));
+}
+double go(int degree, int one, int two, int three)
+{
+	if (degree == 2) {
+		if (!one)return mat[2][0];
+		else if (!two)return mat[2][1];
+		else return mat[2][2];
+	}
 
-	return 0;
+	if (dp[degree][one][two][three] != -1)return dp[degree][one][two][three];
+	double temp, max = 0;
+
+	if (!one) {
+		temp = mat[degree][0] * go(degree + 1, 1, two, three);
+		if (temp > max)max = temp;
+	}
+	if (!two) {
+		temp = mat[degree][1] * go(degree + 1, one, 1, three);
+		if (temp > max)max = temp;
+	}
+	if (!three) {
+		temp = mat[degree][2] * go(degree + 1, one, two, 1);
+		if (temp > max)max = temp;
+	}
+
+	return dp[degree][one][two][three] = max;
 }
