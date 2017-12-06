@@ -4,8 +4,11 @@
 using namespace std;
 
 list<int> lst;
-int N, K,temp,idx,cnt;
-char c;
+int N, K, temp, idx, cnt;
+char c[3];
+
+void erase();
+void insert();
 
 int main()
 {
@@ -22,19 +25,13 @@ int main()
 		scanf("%d", &K);
 		for (int i = 0; i < K; ++i)
 		{
-			scanf("%c", &c);
-			scanf("%c", &c);
-			scanf("%c", &c);
+			scanf("%s", c);
 			scanf("%d", &idx);
 			scanf("%d", &cnt);
-			auto it = lst.begin();
-			for (int k = 0; k < idx; ++k)
-				it++;
-			for (int j = 0; j < cnt; ++j)
+			switch (c[0])
 			{
-				scanf("%d", &temp);
-				it=lst.insert(it, temp);
-				it++;
+			case 'I':insert(); break;
+			case 'D':erase(); break;
 			}
 		}
 		printf("#%d", tc + 1);
@@ -45,5 +42,27 @@ int main()
 			it++;
 		}
 		printf("\n");
+	}
+}
+void insert()
+{
+	auto it = lst.begin();
+	for (int k = 0; k < idx; ++k)
+		it++;
+	for (int j = 0; j < cnt; ++j)
+	{
+		scanf("%d", &temp);
+		it = lst.insert(it, temp);
+		it++;
+	}
+}
+void erase()
+{
+	auto it = lst.begin();
+	for (int k = 0; k < idx; ++k)
+		it++;
+	for (int k = 0; k < cnt; ++k)
+	{
+		it = lst.erase(it);
 	}
 }

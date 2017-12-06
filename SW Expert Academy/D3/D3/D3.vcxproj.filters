@@ -54,6 +54,18 @@
     <ClCompile Include="1228 암호문1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1229 암호문2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1230 암호문3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1234 비밀번호.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1240 단순 2진 암호코드.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
