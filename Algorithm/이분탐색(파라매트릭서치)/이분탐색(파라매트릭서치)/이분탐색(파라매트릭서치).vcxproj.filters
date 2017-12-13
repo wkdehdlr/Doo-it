@@ -27,6 +27,9 @@
     <ClCompile Include="BOJ 6236 용돈관리.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="EXPERT 3074 입국심사.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

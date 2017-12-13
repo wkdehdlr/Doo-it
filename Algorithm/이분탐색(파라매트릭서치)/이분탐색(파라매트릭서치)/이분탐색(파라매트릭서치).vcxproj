@@ -128,6 +128,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="BOJ 6236 용돈관리.cpp" />
+    <ClCompile Include="EXPERT 3074 입국심사.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
