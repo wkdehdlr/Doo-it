@@ -117,6 +117,21 @@
     <ClCompile Include="1865 동철이의 일 분배6.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2819 격자판의 숫자 이어 붙이기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2819 격자판의 숫자 이어 붙이기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3000 중간값 구하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3000 중간값 구하기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3074 입국심사.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

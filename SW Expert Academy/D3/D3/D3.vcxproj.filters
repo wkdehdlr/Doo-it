@@ -72,6 +72,9 @@
     <ClCompile Include="1491 원재의 벽 꾸미기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1860 진기의 최고급 붕어빵.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

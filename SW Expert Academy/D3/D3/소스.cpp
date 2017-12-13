@@ -1,13 +1,11 @@
 #include<cstdio>
+#include<map>
 using namespace std;
+
+map<char *, int> ma[6];
 
 int main()
 {
-	int R, C;
-	int A = 67956;
-	int B = 81729;
 
-	int res1 = A *(R - C);
-	int res2 = B*(61)
-
+	ma[0].find("02");
 }
