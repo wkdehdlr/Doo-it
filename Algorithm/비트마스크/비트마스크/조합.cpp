@@ -6,7 +6,7 @@ int main()
 {
 
 	int max = 1 << 4;
-	
+
 	for (int i = 0; i < max; ++i)
 	{
 		int cnt = 0;
@@ -18,7 +18,7 @@ int main()
 				cnt++;
 			}
 		}
-		if (cnt == 2)
+		if (cnt <= 2)
 		{
 			for (int k = 0; k < cnt; ++k)
 			{

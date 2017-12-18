@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "비트마스크", "비트마스크\비트마스크.vcxproj", "{DE3A810F-0A27-491D-A163-F822FF513570}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE3A810F-0A27-491D-A163-F822FF513570}.Debug|x64.ActiveCfg = Debug|x64
+		{DE3A810F-0A27-491D-A163-F822FF513570}.Debug|x64.Build.0 = Debug|x64
+		{DE3A810F-0A27-491D-A163-F822FF513570}.Debug|x86.ActiveCfg = Debug|Win32
+		{DE3A810F-0A27-491D-A163-F822FF513570}.Debug|x86.Build.0 = Debug|Win32
+		{DE3A810F-0A27-491D-A163-F822FF513570}.Release|x64.ActiveCfg = Release|x64
+		{DE3A810F-0A27-491D-A163-F822FF513570}.Release|x64.Build.0 = Release|x64
+		{DE3A810F-0A27-491D-A163-F822FF513570}.Release|x86.ActiveCfg = Release|Win32
+		{DE3A810F-0A27-491D-A163-F822FF513570}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC4F0EE4-7BB6-44A5-BD1C-002F92225093}
+	EndGlobalSection
+EndGlobal
