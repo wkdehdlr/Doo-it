@@ -18,28 +18,24 @@ int main()
 	scanf("%d", &M);
 
 	int right = maxN;
-	int left = 0;
-	int mid = right;
+	int left = 1;
 
-	while (1)
+	while (left<=right)
 	{
+		int mid = (left + right) / 2;
 		int total = 0;
 		for (int i = 0; i < N; ++i)
 		{
-			if (arr[i] <= mid)
+			if (arr[i] < mid)
 				total += arr[i];
 			else
 				total += mid;
 		}
 
-		if (M < total)
-			right = mid;
-		else if (total <= M)
-			left = mid;
-
-		mid = (right + left) / 2;
-		if (mid == left)
-			break;
+		if (total <= M)
+			left = mid+1;
+		else if (M < total)
+			right = mid-1;
 	}
-	printf("%d\n", mid);
+	printf("%d\n", right);
 }

@@ -19,11 +19,11 @@ int main()
 	}
 
 	int left = maxN;
-	int mid = right;
 	int cnt = 1;
-	while (1)
+	while (left<=right)
 	{
-		bool flag = false;
+
+		int mid = (left + right) / 2;
 		int temp = mid;
 		cnt = 1;
 		for (int i = 0; i < N; ++i)
@@ -43,19 +43,9 @@ int main()
 		}
 
 		if (cnt <= M)
-			right = mid;
+			right = mid-1;
 		else if (M < cnt)
-		{
-			flag = true;
-			left = mid;
-		}
-
-		if (left == right)
-			break;
-
-		mid = (left + right) / 2;
-		if (mid == left && flag)
-			break;
+			left = mid+1;
 	}
-	printf("%d\n", right);
+	printf("%d\n", left);
 }
