@@ -27,6 +27,9 @@
     <ClCompile Include="BOJ 4195 친구네트워크%28이것도%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="EXPERT 3289 서로소 집합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">

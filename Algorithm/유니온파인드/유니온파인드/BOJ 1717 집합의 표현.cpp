@@ -37,5 +37,5 @@ void merge(int a, int b)
 	b = find(b);
 
 	if (a == b)return;
-	arr[a] = b;
+	arr[b] = a;
 }
