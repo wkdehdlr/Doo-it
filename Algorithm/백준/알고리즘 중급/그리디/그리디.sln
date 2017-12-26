@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "그리디", "그리디\그리디.vcxproj", "{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}.Debug|x64.ActiveCfg = Debug|x64
+		{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}.Debug|x64.Build.0 = Debug|x64
+		{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}.Debug|x86.Build.0 = Debug|Win32
+		{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}.Release|x64.ActiveCfg = Release|x64
+		{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}.Release|x64.Build.0 = Release|x64
+		{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}.Release|x86.ActiveCfg = Release|Win32
+		{DC9A5FC8-C214-40BC-8293-DF65F0F67A27}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1035C7CD-6B7F-403D-82F8-447D2A08005E}
+	EndGlobalSection
+EndGlobal
