@@ -1,47 +1,39 @@
 #pragma warning(disable : 4996)
 #include<cstdio>
-int input[5] = { 1,2,3,4,5 };
-void quickSort(int first, int last)
+int arr[6] = {1,2,3,0,4,5 };
+int cnt[11];
+int sortedArr[6];
+int N = 6;
+void calculateDigitNumber()
 {
-	int pivot;
-	int i;
-	int j;
-	int temp;
-
-	if (first < last)
+	for (int i = 0; i < N; i++)
 	{
-		pivot = first;
-		i = first;
-		j = last;
+		cnt[arr[i]]++;
+	}
 
-		while (i < j)
-		{
-			while (input[i] >= input[pivot] && i < last)
-			{
-				i++;
-			}
-			while (input[j] < input[pivot])
-			{
-				j--;
-			}
-			if (i < j)
-			{
-				temp = input[i];
-				input[i] = input[j];
-				input[j] = temp;
-			}
-		}
+	for (int i = 0; i < 10; i++)
+	{
+		cnt[i] = cnt[i - 1] + cnt[i];
+	}
+}
 
-		temp = input[pivot];
-		input[pivot] = input[j];
-		input[j] = temp;
-
-		quickSort(first, j - 1);
-		quickSort(j + 1, last);
+void executeCountingSort()
+{
+	for (int i = 0; i < N; i++)
+	{
+		sortedArr[--cnt[arr[i]]] = arr[i];
 	}
 }
 int main()
 {
-	quickSort(0, 4);
+	calculateDigitNumber();
+	executeCountingSort();
+
+	//print the sorted digits
+	for (int i = N-1; i >= 0; i--)
+	{
+		printf("%d ", sortedArr[i]);
+	}
+	//quickSort(0, 4);
 	return 0;
 }

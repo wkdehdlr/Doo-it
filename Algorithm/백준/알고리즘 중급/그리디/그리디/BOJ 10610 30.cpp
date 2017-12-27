@@ -1,48 +1,53 @@
 #pragma warning(disable : 4996)
 #include<cstdio>
+#include<algorithm>
+#include<functional>
 using namespace std;
 
-char str[7];
-void quickSort(int first, int last)
+char str[100001];
+#define MAX_DIGIT 10
+
+int cnt[MAX_DIGIT];
+int sortedArr[100001];
+void calculateDigitNumber(int num)
 {
-	int pivot;
-	int i;
-	int j;
-	int temp;
-
-	if (first < last)
+	for (int i = 0; i < num; i++)
 	{
-		pivot = first;
-		i = first;
-		j = last;
+		cnt[str[i]-'0']++;
+	}
 
-		while (i < j)
-		{
-			while (str[i] >= str[pivot] && i < last)
-			{
-				i++;
-			}
-			while (str[j] < str[pivot])
-			{
-				j--;
-			}
-			if (i < j)
-			{
-				temp = str[i];
-				str[i] = str[j];
-				str[j] = temp;
-			}
-		}
-
-		temp = str[pivot];
-		str[pivot] = str[j];
-		str[j] = temp;
-
-		quickSort(first, j - 1);
-		quickSort(j + 1, last);
+	for (int i = 0; i < MAX_DIGIT; i++)
+	{
+		cnt[i] = cnt[i - 1] + cnt[i];
 	}
 }
 
+void executeCountingSort(int num)
+{
+	for (int i = num - 1; i >= 0; i--)
+	{
+		sortedArr[--cnt[str[i]-'0']] = str[i]-'0';
+	}
+}
+void insertionSort(int num)
+{
+	char temp;
+	int i;
+	int j;
+
+	for (i = 1; i < num; i++)
+	{
+		temp = str[i];
+		j = i - 1;
+
+		while ((temp > str[j]) && (j >= 0))
+		{
+			str[j + 1] = str[j];
+			j = j - 1;
+		}
+		str[j + 1] = temp;
+	}
+}
 int main()
 {
 	scanf("%s", str);
@@ -51,13 +56,17 @@ int main()
 	for (; str[i] != '\0'; ++i)
 		sum += str[i] - '0';
 
-
-	quickSort(0, i);
+	calculateDigitNumber(i);
+	executeCountingSort(i);
+	//insertionSort(i);
+	//sort(str, str + i,greater<int>());
+	//quickSort(0, i-1);
+	//i = 0;
 	if (sum % 3) { printf("-1\n"); return 0; }
 	else
-		if (str[--i] != '0') { printf("-1\n"); return 0; }
+		if (sortedArr[0] != 0) { printf("-1\n"); return 0; }
 
-	for (i = 0; str[i] != '\0'; ++i)
-		printf("%c", str[i]);
+	for (--i; i>=0; --i)
+		printf("%d", sortedArr[i]);
 	printf("\n");
 }
