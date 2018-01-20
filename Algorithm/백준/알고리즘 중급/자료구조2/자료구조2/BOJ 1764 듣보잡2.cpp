@@ -15,13 +15,16 @@ int main()
 	ios::sync_with_stdio(false);
 	cin >> N >> M;
 	N += M;
+	int cnt = 0;
 	for (int i = 0; i < N; ++i)
 	{
 		string name;
 		cin >> name;
 		if (!st.insert(name).second)
+			//cnt++;
 			pq.push(name);
 	}
+	//cout << cnt << '\n';
 	cout << pq.size() << '\n';
 	while (!pq.empty())
 	{

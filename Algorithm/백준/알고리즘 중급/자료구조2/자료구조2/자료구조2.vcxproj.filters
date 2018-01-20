@@ -60,9 +60,27 @@
     <ClCompile Include="BOJ 1764 듣보잡4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="소스1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ 1765 듣보잡5.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="소스2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="output.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="output1.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="output2.txt">
       <Filter>리소스 파일</Filter>
     </Text>
   </ItemGroup>
