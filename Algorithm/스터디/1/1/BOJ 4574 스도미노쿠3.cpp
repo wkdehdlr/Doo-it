@@ -6,29 +6,12 @@ using namespace std;
 int dr[2] = { 0,1 };
 int dc[2] = { 1,0 };
 
-//char str[29];
+
 int arr[9][9];
 bool check[3][9][10];
 bool domino[10][10];
 int N;
-void reset()
-{
-	//memset(check, false, sizeof(check));
-	//memset(arr, 0, sizeof(arr));
-	//memset(domino, false, sizeof(domino));
-	for (int i = 0; i < 3; ++i)
-		for (int j = 0; j < 9; ++j)
-			for (int k = 0; k < 10; ++k)
-				check[i][j][k] = false;
 
-	for (int i = 0; i < 9; ++i)
-		for (int j = 0; j < 9; ++j)
-			arr[i][j] = 0;
-
-	for (int i = 0; i < 10; ++i)
-		for (int j = 0; j < 10; ++j)
-			domino[i][j] = false;
-}
 void print()
 {
 	for (int i = 0; i < 9; ++i)
@@ -118,17 +101,14 @@ int main()
 {
 	for (int tc = 1; scanf("%d", &N), N != 0; tc++)
 	{
-		//reset();
 		memset(check, false, sizeof(check));
 		memset(arr, 0, sizeof(arr));
 		memset(domino, false, sizeof(domino));
-		int num1, num2;
-		char str1[3], str2[3];
-		//fgets(str, 2, stdin);
+		int num1,num2;
+		char str1[3],str2[3];
 		for (int i = 0; i < N; ++i)
 		{
 			scanf("%d %s %d %s", &num1, str1, &num2, str2);
-			//fgets(str, 11, stdin);
 			int row, col, data, data2;
 			row = str1[0] - 'A';
 			col = str1[1] - '1';
@@ -151,7 +131,6 @@ int main()
 
 			data > data2 ? domino[data2][data] = true : domino[data][data2] = true;
 		}
-		//fgets(str, sizeof(str), stdin);
 		for (int i = 0; i < 9; ++i)
 		{
 			scanf("%s", str1);
