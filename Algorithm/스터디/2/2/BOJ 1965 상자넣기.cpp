@@ -27,7 +27,6 @@ int main()
 			lis[j + 1] = arr[i];
 			j++;
 		}
-
 		else
 		{
 			lis[lower_bound(lis, lis + j, arr[i]) - lis] = arr[i];

@@ -35,5 +35,8 @@
     <ClCompile Include="BOJ 1166 선물.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ 1965 상자넣기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
