@@ -23,13 +23,16 @@
     <ClCompile Include="BOJ 1965 상자넣기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ 2841 외계인의 기타연주.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ 3090 차이를 최소로.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ 6549 히스토그램에서 가장 큰 직사각형.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ 1166 선물.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

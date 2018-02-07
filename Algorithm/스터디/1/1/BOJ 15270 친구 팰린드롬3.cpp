@@ -19,7 +19,7 @@ void func(int degree, int sum)
 	{
 		int num1 = inf[degree].num1;
 		int num2 = inf[degree].num2;
-		if (!visited[num1] && !visited[num2])
+		if (!visited[num1] && !visited[num2])//서로 짝이 될수있는 경우면 
 		{
 			visited[num1] = true;
 			visited[num2] = true;
