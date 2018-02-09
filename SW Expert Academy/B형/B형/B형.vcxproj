@@ -118,8 +118,8 @@
     <Text Include="input.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="solution.cpp" />
+    <ClCompile Include="main%281768%29.cpp" />
+    <ClCompile Include="solution%281768%29.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
