@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="소스.cpp" />
+    <ClCompile Include="큐2개 + hash + 비트마스크.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
