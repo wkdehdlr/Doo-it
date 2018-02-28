@@ -4,7 +4,7 @@
 #include<queue>
 #include<unordered_map>
 const int maxn = 5000007;
-
+//qwe
 using namespace std;
 struct E {
 	int next, w;
