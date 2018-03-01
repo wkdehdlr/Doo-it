@@ -21,6 +21,30 @@
     <ClCompile Include="큐2개 + hash + 비트마스크.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="일반큐 + map + 구현.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="휴리스틱pq + map + 구현.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="큐2개 + hash + 구현.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="큐2개 + map + 구현.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="큐2개 + map + 비트마스크.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="휴리스틱pq + hash + 구현.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="휴리스틱pq + map + 비트마스크X.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="휴리스틱pq + hash + 비트마스크X.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
