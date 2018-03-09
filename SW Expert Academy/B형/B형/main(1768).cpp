@@ -83,7 +83,7 @@ static bool check(int guess[]) {
 
 int main() {
 	int total_score = 0;
-	int total_querycount = 0;;
+	int total_querycount = 0;
 
 	//freopen("input.txt", "r", stdin);
 	setbuf(stdout, NULL);

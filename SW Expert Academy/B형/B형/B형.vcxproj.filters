@@ -47,5 +47,17 @@
     <ClCompile Include="BOJ 3907 정육면체 8퍼즐.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="JO 3108 마법의성_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="JO 3108 마법의성_solution.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="JO 3108 마법의성_solution2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="JO 3108 마법의성_solution3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
