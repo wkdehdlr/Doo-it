@@ -69,66 +69,66 @@ void set()
 	right_temp[0] = data;
 	right_visited[0] = true;
 }
-int setting_youngjum(int user_ans[], int left_idx, int right_idx)
+void go(int floor, int top, int lost, int user_ans[])
 {
-	while (1) {
-		if (!left_visited[left_idx]) {
-			int data = getNumber(1, left_idx);
-			left_temp[left_idx] = data;
-			left_visited[left_idx] = true;
-		}
-		if (!right_visited[right_idx]) {
-			int data = getNumber(2, right_idx);
-			right_temp[right_idx] = data;
-			right_visited[right_idx] = true;
-		}
-		if (left_temp[left_idx] == right_temp[right_idx])break;
-		else {
-			user_ans[cnt++] = left_temp[left_idx++];
-		}
-	}
-	return left_idx;
-}
-void func(int user_ans[])
-{
-	int ril = 0, rir = right_max_index;
-	int lil = 0, lir = left_max_index;
-	int left = 0, right = rir;
-	for (; ril <= rir;) {
-		left = ril; right = rir;
-		while (left <= right) {
+	if (lost == 1)//잃어버린카드가 1개일경우->이분탐색
+	{
+		int left = floor, right = top;
+		while (left <= right)
+		{
 			int mid = (left + right) / 2;
-			if (!left_visited[lil + mid - ril]) {
-				int data = getNumber(1, lil + mid - ril);
-				left_temp[lil + mid - ril] = data;
-				left_visited[lil + mid - ril] = true;
+			if (!left_visited[mid]) {
+				int data = getNumber(1, mid);
+				left_temp[mid] = data;
+				left_visited[mid] = true;
 			}
-			if (!right_visited[mid]) {
+
+			if (!right_temp[mid]) {
 				int data = getNumber(2, mid);
 				right_temp[mid] = data;
 				right_visited[mid] = true;
 			}
 
-			if (left_temp[lil + mid - ril] != right_temp[mid]) {
-				right = mid - 1;
-			}
-			else {
+			if (left_temp[mid] == right_temp[mid]) {
 				left = mid + 1;
 			}
+			else {
+				right = mid - 1;
+			}
 		}
-		if (left > rir)break;
-		user_ans[cnt++] = left_temp[lil + left - ril];
-		if (ans_count == cnt)return;
-		lil = setting_youngjum(user_ans, lil + left - ril + 1, left);
-		if (ans_count == cnt)return;
-		ril = left;
+		user_ans[cnt++] = left_temp[left];
 	}
-	if (ans_count == cnt)return;
-	else {
-		for (lil = lil + left - ril; lil <= lir; ++lil) {
-			user_ans[cnt++] = left_temp[lil];
+	else
+	{
+		int term = (top - floor) / lost;
+		for (int i = floor + term; i <= top; i += term) {
+			int yj = -1;//left_index에 처리해줄 영점
+			do {
+				yj++;
+				if (!left_visited[i + yj]) {
+					int data = getNumber(1, i + yj);
+					left_temp[i + yj] = data;
+					left_visited[i + yj] = true;
+				}
+
+				if (!right_temp[i]) {
+					int data = getNumber(2, i);
+					right_temp[i] = data;
+					right_visited[i] = true;
+				}
+			} while (left_temp[i + yj] != right_temp[i]);
+			if (yj) {
+				go(i - term,  i + yj, yj, user_ans);
+				floor = i + yj + 1;
+				i = floor;
+				term = (top - floor) / (lost - yj);
+			}
 		}
 	}
+}
+void func(int user_ans[])
+{
+	go(0, left_max_index, ans_count,user_ans);
 }
 
 int card_find(int user_ans[])

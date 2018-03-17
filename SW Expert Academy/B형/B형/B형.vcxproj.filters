@@ -59,5 +59,8 @@
     <ClCompile Include="JO 3108 마법의성_solution3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="JO 3108 마법의성_solution4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -158,7 +158,9 @@ static void init(int tc)
 static void check()
 {
 	if (ansN != userN) getCount = N;
-
+	/*for (int i = 0; i < 548; i++) {
+		if (ans[i] != user_ans[i])printf("%d %d %d\n", i, ans[i], user_ans[i]);
+	}*/
 	for (int i = 0; i < ansN; i++) {
 
 		if (ans[i] != user_ans[i]) getCount = N;
@@ -171,7 +173,7 @@ static void check()
 int main(void)
 {
 	//srand((unsigned)time(NULL));
-	int T = 1; /// 0 ~ 9
+	int T = 8; /// 0 ~ 9
 			   //scanf("%d", &T);
 	for (int tc = 0; tc < T; tc++)
 	{
@@ -179,7 +181,7 @@ int main(void)
 		init(tc);
 		userN = card_find(user_ans);
 		check();
-		printf("#%d %d\n", tc + 1, getCount);
+		printf("#%d %d %d\n", tc + 1, ansN,getCount);
 	}
 	return 0;
 }
