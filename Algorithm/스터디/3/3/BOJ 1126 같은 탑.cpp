@@ -1,10 +1,11 @@
+#pragma warning(disable : 4996)
 #include <cstdio>
 #include <algorithm>
 using namespace std;
 int n;
 int in[52];
 int dp[52][500005];
-
+int cnt = 0;
 void init() {
 
 	for (int i = 0; i < 52; i++) {
@@ -16,6 +17,7 @@ void init() {
 
 
 int process(int index, int leftTop, int rightTop) {
+	
 	int t = leftTop - rightTop + 250000;
 
  	if (index > n) return -1; //불가능한 경우..
@@ -23,9 +25,12 @@ int process(int index, int leftTop, int rightTop) {
 	if (dp[index][t] != -2) { //방문했던 곳인 경우
 		return dp[index][t];
 	}
-	 
+	cnt++;
 	dp[index][t] = -1;
-	if (t == 250000 && leftTop != 0) dp[index][t] = 0;
+	if (t == 250000 && leftTop != 0) {
+		//printf("%d\n", leftTop);
+		dp[index][t] = 0;
+	}
 
 	int f = process(index + 1, leftTop + in[index], rightTop);
 	int s = process(index + 1, leftTop, rightTop + in[index]);
@@ -55,6 +60,7 @@ int main() {
 	}
 	init();
 	printf("%d\n", process(0, 0, 0));;
+	printf("%d\n", cnt);
 }
 
 /*
