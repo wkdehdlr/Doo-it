@@ -28,7 +28,7 @@ int process(int index, int leftTop, int rightTop) {
 	cnt++;
 	dp[index][t] = -1;
 	if (t == 250000 && leftTop != 0) {
-		//printf("%d\n", leftTop);
+		//printf("%d\n", in[index]);
 		dp[index][t] = 0;
 	}
 
@@ -38,6 +38,7 @@ int process(int index, int leftTop, int rightTop) {
 
 	if (f != -1) {
 		dp[index][t] = max(dp[index][t], f + in[index]);
+		printf("%d\n", dp[index][t]);
 	}
 
 	if (s != -1) {
@@ -60,7 +61,7 @@ int main() {
 	}
 	init();
 	printf("%d\n", process(0, 0, 0));;
-	printf("%d\n", cnt);
+	//printf("%d\n", cnt);
 }
 
 /*

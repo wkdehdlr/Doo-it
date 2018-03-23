@@ -15,16 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ 2629 양팔저울.cpp">
+    <ClCompile Include="BOJ 2667 단지번호붙이기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ 5676 음주코딩.cpp">
+    <ClCompile Include="BOJ 2668 숫자고르기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ 3006 터보소트.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ 9466 텀 프로젝트.cpp">
+    <ClCompile Include="BOJ 2669 직사각형 네개의 합집합의 면적 구하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
