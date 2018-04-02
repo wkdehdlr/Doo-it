@@ -15,34 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BOJ 2667 단지번호붙이기.cpp">
+    <ClCompile Include="BOJ 3653 영화수집.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ 2668 숫자고르기.cpp">
+    <ClCompile Include="BOJ 2533 사회망 서비스(SNS).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ 2669 직사각형 네개의 합집합의 면적 구하기.cpp">
+    <ClCompile Include="BOJ 1280 나무심기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ 2658 직각이등변삼각형찾기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ 2659 십자카드문제.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ 2660 회장뽑기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ 2641 다각형그리기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ 2641 다각형그리기2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ 14468 소가 길을 건너간 이유2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ 2650 교차점개수.cpp">
+    <ClCompile Include="BOJ 14463 소가 길을 건너간 이유9.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
