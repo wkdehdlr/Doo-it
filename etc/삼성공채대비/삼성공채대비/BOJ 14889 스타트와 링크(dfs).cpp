@@ -4,8 +4,8 @@
 int mn = 0x7fffffff;
 int N;
 int arr[21][21];
-int arr1[10];
-int arr2[10];
+int arr1[11];
+int arr2[11];
 bool visited[21];
 
 void DFS(int idx, int dep)
@@ -41,7 +41,7 @@ void DFS(int idx, int dep)
 			{
 				visited[i] = true;
 				arr1[dep] = i;
-				DFS(i, dep + 1);
+				DFS(i , dep + 1);
 				visited[i] = false;
 			}
 		}
@@ -54,12 +54,16 @@ int main()
 		for (int j = 1; j <= N; ++j)
 			scanf("%d", &arr[i][j]);
 
-	for (int i = 1; i <= N / 2; ++i)
-	{
-		visited[i] = true;
-		arr1[0] = i;
-		DFS(i, 1);
-		visited[i] = false;
-	}
+
+	//for (int i = 1; i <= N; ++i)
+	//{
+		//if (!visited[i])
+	//	{
+			visited[1] = true;
+			arr1[0] = 1;
+			DFS(1, 1);
+			//visited[i] = false;
+	//	}
+	//}
 	printf("%d\n", mn);
 }
