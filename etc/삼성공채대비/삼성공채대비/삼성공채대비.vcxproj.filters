@@ -75,6 +75,27 @@
     <ClCompile Include="SWEA 2105 디저트 카페.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SWEA 1953 탈주범 검거.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA 1952 수영장.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA 1949 등산로 조성.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA 2117 홈방범 서비스.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA 2382 미생물 격리.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA 2383 점심 식사시간.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA 2115 벌꿀채취.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
