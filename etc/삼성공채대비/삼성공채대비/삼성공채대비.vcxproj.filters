@@ -105,7 +105,10 @@
     <ClCompile Include="SWEA 2112 보호필름.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SWEA 2112 보호필름2.cpp">
+    <ClCompile Include="SWEA 2112 보호필름3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="소스4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

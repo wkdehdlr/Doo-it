@@ -5,8 +5,10 @@
 using namespace std;
 
 int visited[14];
-vector<vector<int> > arr(14, vector<int>(21));
-vector<vector<int> > vec;
+//vector<vector<int> > arr(14, vector<int>(21));
+//vector<vector<int> > vec(14, vector<int>(21));
+int arr[14][21];
+int vec[14][21];
 int T, D, W, K;
 int mn = 0x7fffffff;
 bool go()
@@ -34,10 +36,14 @@ bool go()
 }
 void DFS(int dep, int  cnt)
 {
-	if (cnt > mn)return;
+	if (cnt >= mn)return;
 	if (dep == D + 1)
 	{
-		vec = arr;
+		memcpy(vec, arr, sizeof(vec));
+		//for (int i = 1; i <= D; ++i)
+			//for (int j = 1; j <= W; ++j)
+				//vec[i][j] = arr[i][j];
+
 		for (int i = 1; i <= D; ++i)//За
 		{
 			if (visited[i] == 1){
