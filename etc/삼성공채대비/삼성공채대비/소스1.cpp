@@ -1,39 +1,28 @@
 #include<cstdio>
 #include<cstring>
-bool visited[5];
-int arr[4];
+bool visited[7];
+int arr[7];
 int main()
 {
-	int N = 4;
-	for (int k = 0; k <= 2; ++k)
+	int N = 6;
+	int mx = 1 << 6;
+	for (int i = 0; i < mx; ++i)
 	{
-		int mx = 1 << N;
-		for (int i = 0; i < mx / 2; ++i)
+		int idx = 0;
+		for (int j = 0; j < N; ++j)
 		{
-			int idx = 0;
-			for (int j = 0; j < N; ++j)
+			if ( i & (1 << j))
 			{
-				if (i & (1 << j))
-				{
-					arr[idx++] = j + 1;
-				}
+				arr[idx++] = j + 1;
 			}
-			if (idx == k)
+		}
+		if (idx == 2)
+		{
+			for (int k = 0; k < idx; ++k)
 			{
-				memset(visited, 0, sizeof(visited));
-				for (int i = 0; i < idx; ++i)
-				{
-					visited[arr[i]] = true;
-					printf("%d ", arr[i]);
-				}
-				printf(" // ");
-				for (int i = 1; i <= 4; ++i)
-				{
-					if (!visited[i])
-						printf("%d ", i);
-				}
-				printf("\n");			    
+				printf("%d ", arr[k]);
 			}
+			printf("\n");
 		}
 	}
 }
