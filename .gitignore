@@ -286,3 +286,4 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/Algorithm/백준/알고리즘 중급/다이나믹 프로그래밍/다이나믹 프로그래밍/BOJ 1695 팰린드롬 만들기.cpp

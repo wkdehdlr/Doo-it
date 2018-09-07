@@ -1,8 +1,98 @@
-1                                         
-100000 99999                                     
-100000                                        
-0 4 0 5 0 4 0 5 0 4...
-50000                                       
-0 99999 1 99998 2 99997 3 99996...
-50000                                         
-3 4 5 2 1
+97
+1 30 glwyyaedrwuugmegmagyamjuxquvet
+1 1 t
+2 5
+3 25
+1 26 vqpiqubtrxanyashwvsjrswxrn
+5 21
+3 3
+3 5
+6 
+1 5 asafp
+1 20 mjracnrasnkoxebgsegz
+4 8
+1 18 ktlyfjlfiplnsgydew
+7 59 935 racnrasnkoktlyfjlfiplnsgydewxebgsegz
+1 32 lckutrdslylwvmfjcephwzzpflucopze
+6 
+1 18 ohcpmqpoiwobgdllgx
+3 11
+2 1
+1 24 yxbukotfdvquzlsajizmpmsj
+7 66 482 nkoktlyfjlfiplnsgydewohcpmqpoiwobgdllgyxbukotfdvquzlsajizmpmsj
+3 5
+7 58 445 jracnrasnkoktlyfjlfiplnsgydewohcpmqpoiwobgdllgyxbukotfdvquzlsajizmpmsj
+7 71 794 lyfjlfiplnsgydewohcpmqpoiwobgdllgyxbukotfdvquzlsajizmpmsj
+1 26 xljvvtaarnzqyenqrfmalonrxl
+7 11 330 ugmegmagyamjuxqvqpiqubtrxanyashwvsjrswxrnasafpmjracnrasnkoktlyfjlfiplnsgydewohcpmqpoiwobgdllgyxbukotfdvquzlsajizmpmsjxljvvtaarnzqyenqrfmalonrxl
+6 
+7 66 287 nkoktlyfjlfiplnsgydewohcpmqpoiwobgdllgyxbukotfdvquzlsajizmpmsj
+1 23 xwdyrbdkvzwmepsdpxirdwc
+1 2 ig
+7 135 516 kvzwmepsdpxirdwcig
+3 14
+2 12
+7 56 540 pmjracnrasnkoktlyfjlfiplnsgydewohcpmqpoiwobgdllgyxbukotfdvquzlsajizmpmsjxwdyrbdkvzwme
+1 23 odpiifrvnoqvqvtbacdahsf
+5 7
+2 31
+1 17 bqcnlydtevjkuafzz
+6 
+1 7 nhejpqs
+7 105 372 xbukotfdvquzlsajizmpmsjxwdyrnhejpqs
+5 13
+3 4
+1 32 cbswxxsdkaesoazowlgdtiohkmvvidwy
+1 13 futbcatytgzds
+2 28
+1 1 q
+1 19 nubmrqbtwcutziwslto
+1 8 ggkvwgeq
+1 6 agkqiw
+3 24
+5 30
+1 7 vgboame
+1 25 vswpudlbmabjwakpqvbohmmsv
+1 4 rosd
+5 4
+4 5
+5 16
+1 7 tnvhvof
+1 12 hjxydeedrcgc
+4 20
+4 32
+3 25
+2 19
+1 11 hajitvpvagu
+3 23
+7 82 256 gydewohcpmqpoiwobgdllgyxbukotfdvquzlsajizmpmsjxwdyrnhejpqscbswxxsdkaesoazowqnubmrqbtwcutziwslhajitvpvagurcgc
+2 24
+2 8
+1 4 vroh
+7 63 188 rasnkoktlyfjlfiplnsgydewohcpmqpoiwobgdllgyxbukotfdvquzlsajizmpmsjxwdyrnhejpqscbswxxsdkaesoavrohrcgc
+5 25
+6 
+5 21
+1 19 zwqjdnwkqzgzvwnmfea
+5 24
+4 24
+3 14
+6 
+1 16 qqoblwwkweamdjgf
+1 21 baimxnlivmlubhstjoaqg
+1 13 hgfifqayddmks
+1 7 gqqcicm
+7 184 407 tjoaqghgfifqayddmksgqqcicmarcgczwqjdnwkqzgzvwnmfea
+1 22 buhnwdutitnmwihcyarhtz
+3 18
+5 32
+5 13
+6 
+1 25 frrjhmuwoxwoxneqwhmsaorpg
+1 20 gbosjjrqhqtuauztavqc
+1 18 khwyoebfvlvfnbnpbf
+1 14 nawjhtypdoafht
+1 11 jtkyebvsnoh
+1 13 ghvrtgytzezjv
+1 23 ijjrdgtzboqcxxwcalbgxwk
+7 129 14 wdyrnhejpqscbs
