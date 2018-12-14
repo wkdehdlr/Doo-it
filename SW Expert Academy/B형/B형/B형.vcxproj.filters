@@ -230,5 +230,8 @@
     <ClCompile Include="SWEA 연락처 Database_solution.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
