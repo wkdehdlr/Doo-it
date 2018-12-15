@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "대회", "대회\대회.vcxproj", "{204D0903-F608-4CBD-8313-03A92BF3A4FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{204D0903-F608-4CBD-8313-03A92BF3A4FA}.Debug|x64.ActiveCfg = Debug|x64
+		{204D0903-F608-4CBD-8313-03A92BF3A4FA}.Debug|x64.Build.0 = Debug|x64
+		{204D0903-F608-4CBD-8313-03A92BF3A4FA}.Debug|x86.ActiveCfg = Debug|Win32
+		{204D0903-F608-4CBD-8313-03A92BF3A4FA}.Debug|x86.Build.0 = Debug|Win32
+		{204D0903-F608-4CBD-8313-03A92BF3A4FA}.Release|x64.ActiveCfg = Release|x64
+		{204D0903-F608-4CBD-8313-03A92BF3A4FA}.Release|x64.Build.0 = Release|x64
+		{204D0903-F608-4CBD-8313-03A92BF3A4FA}.Release|x86.ActiveCfg = Release|Win32
+		{204D0903-F608-4CBD-8313-03A92BF3A4FA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF141B44-4527-4DA3-9372-DE7A65AB9A50}
+	EndGlobalSection
+EndGlobal
