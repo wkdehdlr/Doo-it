@@ -102,9 +102,15 @@
     <ClCompile Include="소스3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="소스5.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="output.txt">
       <Filter>리소스 파일</Filter>
     </Text>
   </ItemGroup>
