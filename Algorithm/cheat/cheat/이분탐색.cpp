@@ -1,4 +1,4 @@
-//ÃÖ´ñ°ª
+//max
 while (low < high) {
 	mid = (low + high + 1) / 2;
 	if (ok) {
@@ -10,7 +10,7 @@ while (low < high) {
 }
 
 
-//ÃÖ¼Ú°ª
+//min
 while (low < high) {
 	mid = (low + high) / 2;
 	if (ok) {
