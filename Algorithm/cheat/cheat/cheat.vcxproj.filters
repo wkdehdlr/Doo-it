@@ -21,5 +21,17 @@
     <ClCompile Include="이분탐색.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="라인스위핑.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="디피.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="조합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="순열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
