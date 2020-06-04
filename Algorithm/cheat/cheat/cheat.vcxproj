@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="split(c++).cpp" />
     <ClCompile Include="디피.cpp" />
     <ClCompile Include="라인스위핑.cpp" />
     <ClCompile Include="순열.cpp" />
