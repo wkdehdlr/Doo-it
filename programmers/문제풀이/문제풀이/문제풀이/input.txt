@@ -1,0 +1,9 @@
+2 4
+ox oo 4
+ox xo 4
+xx ox 1
+xo oo 3
+3
+xo oo
+oo xx
+xx oo
