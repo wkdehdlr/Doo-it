@@ -58,3 +58,10 @@ string(1, 'a')
 string(2, 'aa')
 
 std::set<int>::iterator it = it.begin();
+
+
+#include<algorithm>
+
+string new_id="ABC";
+transform(new_id.begin(), new_id.end(),new_id.begin(), ::tolower);
+//abc
