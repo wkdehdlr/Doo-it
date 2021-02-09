@@ -65,3 +65,20 @@ std::set<int>::iterator it = it.begin();
 string new_id="ABC";
 transform(new_id.begin(), new_id.end(),new_id.begin(), ::tolower);
 //abc
+
+#include<algorithm>
+vertor<pair<int, int> > arr;
+bool comp(const pair<int, int> &a, const pair<int, int> &b)
+{
+    return a.first < b.first;
+}
+sort(arr.begin(), arr.end());
+
+for (int i = 0; i < n; i++)
+    cout << "i :: " << i << " x :: " << arr[i].first << " y :: " << arr[i].second << endl;
+
+// x가 5이상인 값이 있는 첫 index를 찾는 과정이다. 
+auto lo_it = lower_bound(arr.begin(), arr.end(), pair<int,int>(5, 0), comp) - arr.begin();
+
+// x가 5초과인 값이 있는 첫 index를 찾는 과정이다. 
+auto up_it = upper_bound(arr.begin(), arr.end(), pair<int,int>(5, 0), comp) - arr.begin();
